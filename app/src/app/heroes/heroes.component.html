@@ -13,7 +13,5 @@
 </ul>
 
 <div *ngIf="selectedHero">
-    <label>name:
-      <input [(ngModel)]="selectedHero.name" placeholder="name"/>
-    </label>
+  <app-hero-detail [hero]="selectedHero"></app-hero-detail>
 </div>
